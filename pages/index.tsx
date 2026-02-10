@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { GetStaticProps } from "next";
 import { getAllPosts, type PostMeta } from "../lib/posts";
+import PreviewBanner from "../components/PreviewBanner";
 
 type HomeProps = {
   posts: PostMeta[];
@@ -10,6 +11,7 @@ export default function Home({ posts }: HomeProps) {
   return (
     <main className="page">
       <div className="wrap">
+        <PreviewBanner />
         <header className="header">
           <p className="eyebrow">Zero Labs Blog</p>
           <h1 className="title">Notes from the Zero Labs team.</h1>

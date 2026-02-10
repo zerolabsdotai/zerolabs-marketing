@@ -3,6 +3,7 @@ import type { GetStaticPaths, GetStaticProps } from "next";
 import { MDXRemote, type MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import { getAllPosts, getPostBySlug, type PostMeta } from "../../lib/posts";
+import PreviewBanner from "../../components/PreviewBanner";
 
 type PostPageProps = {
   source: MDXRemoteSerializeResult;
@@ -13,6 +14,7 @@ export default function PostPage({ source, frontmatter }: PostPageProps) {
   return (
     <main className="page">
       <div className="wrap">
+        <PreviewBanner />
         <Link className="back" href="/">
           &larr; Back to blog
         </Link>
