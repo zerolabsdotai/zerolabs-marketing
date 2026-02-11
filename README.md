@@ -15,3 +15,7 @@
 ## Environment variables
 
 This project does not use environment variables. No `.env*` files are required.
+
+## Documentation
+- `docs/marketing-homepage-handoff.md`
+- `docs/epic-218-zer-223-closeout.md`
